@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .main {
+      width: 600px;
+      margin: auto;
+    }
+
+    label {
+      display: inline-block;
+      width: 200px;
+    }
+
+    .row {
+      padding: 4px;
+    }
+
+    button {
+      background: darkcyan;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <h1>Light Lift Controller Wi-Fi config</h1>
+    <form method="POST" action="/update">
+      <div class="row">
+        <label>SSID</label>
+        <input name="ssid" value="$ssid" />
+      </div>
+      <div class="row">
+        <label>Password</label>
+        <input name="password" value="$password" type="password" />
+      </div>
+      <div class="row">
+        <label>MQTT Host</label>
+        <input name="mqtt_host" value="$mqtt_host" />
+      </div>
+      <div class="row">
+        <label>MQTT Port</label>
+        <input name="mqtt_port" value="$mqtt_port" />
+      </div>
+      <div class="row">
+        <label>MQTT Username</label>
+        <input name="mqtt_username" value="$mqtt_username" />
+      </div>
+      <div class="row">
+        <label>MQTT Password</label>
+        <input name="mqtt_password" value="$mqtt_password" type="password" />
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+</body>
+
+</html>

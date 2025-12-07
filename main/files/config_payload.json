@@ -1,0 +1,41 @@
+{
+  "dev": {
+    "ids": "light_lift",
+    "name": "Light Lift",
+    "mf": "Andrei Demenev",
+    "sn": "ea334450945af1"
+  },
+  "o": {
+    "name": "lightlift"
+  },
+  "cmps": {
+    "move_up": {
+      "p": "button"
+    },
+    "move_down": {
+      "p": "button"
+    },
+    "stop": {
+      "p": "button"
+    },
+    "light": {
+      "p": "light",
+      "command_topic": "lightlift/command",
+      "unique_id": "light",
+      "name": "Light",
+      "payload_on": "light_on",
+      "payload_off": "light_off",
+      "state_topic": "lightlift/light_state"
+    },
+    "lift": {
+      "p": "cover",
+      "command_topic": "lightlift/command",
+      "name": "Lift",
+      "unique_id": "lift",
+      "payload_open": "up",
+      "payload_close": "down",
+      "payload_stop": "stop"
+    }
+  },
+  "qos": 1
+}
